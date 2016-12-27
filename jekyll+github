@@ -1,0 +1,36 @@
+# 1、下载安装[Ruby](https://rubyinstaller.org/downloads/)
+
+# 2、安装[Devkit](http://rubyinstaller.org/downloads/)
+
+# 3、Fix 'config.yml'
+
+`cd devkit // 目的是将当前目录转移到devkit解压路径`
+
+`ruby dk.rb init`
+
+将`- C:\Ruby22-x64`加入‘config.yml’
+
+`ruby dk.rb install`
+
+# 4、安装jekyll包和[gem](https://rubygems.org/pages/download)
+
+``` 
+gem install jekyll // 安装jekyll
+gem install kramdown // markdown语言解析包
+gem install pygments.rb // 代码高亮包
+gem install liquid // 这个包我不知道，但是好像有用
+// 还有些别的包，看需要来安装啦
+gem install D:\迅雷下载\rubygems-update-2.6.8.gem
+gem install bundler
+bundle install
+bundle exec jekyll build
+bundle exec jekyll serve
+gem install rdiscount
+```
+
+# 5、安装
+
+ git checkout --orphan gh-pages
+
+
+
